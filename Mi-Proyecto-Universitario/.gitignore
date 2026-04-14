@@ -1,0 +1,23 @@
+# Dependencias de código (Carpetas pesadas que no se suben)
+node_modules/
+vendor/
+.env
+__pycache__/
+*.log
+
+# Multimedia pesada (Se sube a Drive/Cloud, no a Git)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.zip
+*.rar
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de oficina temporales
+~$*.docx
+~$*.xlsx
