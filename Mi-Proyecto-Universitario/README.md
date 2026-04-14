@@ -6,7 +6,7 @@ Sistema web para gestión de créditos productivos.
 ## 🚀 Tecnologías
 - Node.js
 - React
-- MySQL (o la que uses)
+- PosgredSql
 
 ## ⚙️ Instalación
 cd backend
