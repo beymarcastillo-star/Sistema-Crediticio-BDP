@@ -90,12 +90,11 @@ export const TAREAS_POR_VISTA = {
   // ── AdminView.jsx ──────────────────────────────────────────
   Admin: [
     { pareja: 'P2', hu: 'HU-02', persona: 'Beymar', estado: 'pendiente', tarea: 'Toggles de matriz de permisos deben cambiar estado visualmente al hacer clic' },
-    { pareja: 'P2', hu: 'HU-02', persona: 'Beymar', estado: 'pendiente', tarea: 'Botón "+ Nuevo Usuario" con modal: nombre, email, rol' },
-    { pareja: 'P2', hu: 'HU-02', persona: 'Beymar', estado: 'pendiente', tarea: 'Botones Editar/Desactivar en cada tarjeta de usuario' },
+    { pareja: 'P2', hu: 'HU-02', persona: 'Beymar', estado: 'listo',    tarea: 'Gestión de usuarios: listar, crear invitación con carnet/nombre/rol' },
     { pareja: 'P2', hu: 'HU-02', persona: 'Beymar', estado: 'pendiente', tarea: 'Modal de confirmación al cambiar un permiso' },
-    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'pendiente', tarea: 'Input "Filtrar por usuario" debe filtrar la lista de logs visualmente' },
-    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'pendiente', tarea: 'Selector de operación: Todos / INSERT / UPDATE / DELETE / SELECT' },
-    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'pendiente', tarea: 'Paginación de logs: Anterior/Siguiente + "Página X de Y"' },
+    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'listo', tarea: 'Input "Filtrar por usuario" debe filtrar la lista de logs visualmente' },
+    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'listo', tarea: 'Selector de operación: Todos / INSERT / UPDATE / DELETE / SELECT' },
+    { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'listo', tarea: 'Paginación de logs: Anterior/Siguiente + "Página X de Y"' },
     { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'pendiente', tarea: 'Modal de detalle al clic en fila: hash completo, datos antes/después' },
     { pareja: 'P3', hu: 'HU-03', persona: 'Norma', estado: 'pendiente', tarea: 'Botón "Verificar integridad" con resultado visual ✅/❌' },
     { pareja: 'P3', hu: 'HU-12', persona: 'Norma', estado: 'pendiente', tarea: 'Botón "Guardar cambios" del Motor de Reglas con spinner → "Guardado ✓"' },

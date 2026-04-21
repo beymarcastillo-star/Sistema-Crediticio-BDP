@@ -1,7 +1,17 @@
 // frontend/src/modules/admin/AdminView.jsx
+// ============================================================
+// TAREAS PENDIENTES — AdminView.jsx
+// ── P2 🟣 Beymar · HU-02 (Roles y Permisos) ─────────────────
+// TODO (P2 · Beymar · HU-02): Toggles de matriz de permisos deben cambiar estado al hacer clic
+// TODO (P2 · Beymar · HU-02): Modal de confirmación al cambiar un permiso
+// ── P3 🟠 Norma · HU-12 (Motor de Reglas) ───────────────────
+// TODO (P3 · Norma · HU-12): Botón "Guardar cambios" con spinner → "Guardado ✓" tras 2s
+// TODO (P3 · Norma · HU-12): Botón "Restaurar por defecto" con modal de confirmación
+// ============================================================
 import { useState, useEffect, useCallback } from 'react';
 import AuditoriaView from './AuditoriaView.jsx';
 import { api } from '../../services/api.js';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 // ── Gestión de Usuarios ─────────────────────────────────────────
 function GestionUsuariosView() {
@@ -348,6 +358,7 @@ export default function AdminView() {
           </div>
         </div>
       )}
+      <DevTaskPanel vista="Admin" />
     </div>
   );
 }
