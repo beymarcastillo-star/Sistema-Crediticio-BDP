@@ -18,17 +18,12 @@ export const PAREJAS = {
 
 export const TAREAS_POR_VISTA = {
 
-  // ── App.jsx (Login + Layout general) ──────────────────────
-  App: [
+  // ── Login (App.jsx — pantalla de inicio de sesión) ────────
+  // Solo visible en la pantalla de login, antes de entrar al sistema
+  Login: [
     { pareja: 'P1', hu: 'HU-01', persona: 'Roger', estado: 'pendiente', tarea: 'Agregar link "¿Olvidaste tu contraseña?" bajo el botón login' },
     { pareja: 'P1', hu: 'HU-01', persona: 'Roger', estado: 'pendiente', tarea: 'Reemplazar mensaje texto plano por toast con color (rojo/verde/amarillo)' },
     { pareja: 'P1', hu: 'HU-01', persona: 'Roger', estado: 'pendiente', tarea: 'Mostrar estado "bloqueado" tras 3 intentos fallidos con cuenta regresiva' },
-    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Chip online/offline en topbar usando navigator.onLine' },
-    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Banner amarillo "Modo sin conexión" cuando se pierda la red' },
-    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Banner verde temporal "Conexión restaurada" al volver online' },
-    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Panel de notificaciones al clic en 🔔 (drawer con lista mock)' },
-    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Badge con contador en ícono 🔔' },
-    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Aviso sesión por vencer: banner "Tu sesión expira en 5 min — ¿Renovar?"' },
   ],
 
   // ── DashboardView.jsx ──────────────────────────────────────
@@ -36,6 +31,9 @@ export const TAREAS_POR_VISTA = {
     { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Instalar recharts y agregar gráfico de líneas/barras de tendencia semanal (8 semanas)' },
     { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Badge "12" del sidebar debe venir de useState, no ser texto fijo' },
     { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Botones "Ver"/"Evaluar" de la tabla deben navegar a la vista correcta' },
+    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Panel de notificaciones al clic en 🔔 (drawer con lista mock)' },
+    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Badge con contador en ícono 🔔' },
+    { pareja: 'P2', hu: 'HU-11', persona: 'Beymar', estado: 'pendiente', tarea: 'Aviso sesión por vencer: banner "Tu sesión expira en 5 min — ¿Renovar?"' },
   ],
 
   // ── SolicitudesView.jsx ────────────────────────────────────
@@ -44,6 +42,9 @@ export const TAREAS_POR_VISTA = {
     { pareja: 'P1', hu: 'HU-04', persona: 'Roger', estado: 'pendiente', tarea: 'Dropdowns de Estado y Sector que filtren las filas de la tabla' },
     { pareja: 'P1', hu: 'HU-04', persona: 'Roger', estado: 'pendiente', tarea: 'Paginación: botones Anterior/Siguiente + indicador "Página X de Y"' },
     { pareja: 'P1', hu: 'HU-04', persona: 'Roger', estado: 'pendiente', tarea: 'Botones de fila (Evaluar/Detalle/Revisar/Ver) deben navegar a la vista correcta' },
+    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Chip online/offline en topbar usando navigator.onLine' },
+    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Banner amarillo "Modo sin conexión" cuando se pierda la red' },
+    { pareja: 'P1', hu: 'HU-10', persona: 'Roger', estado: 'pendiente', tarea: 'Banner verde temporal "Conexión restaurada" al volver online' },
   ],
 
   // ── NuevaSolicitudView.jsx ─────────────────────────────────
