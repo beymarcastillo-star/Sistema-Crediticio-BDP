@@ -1,4 +1,14 @@
 // frontend/src/modules/creditos/RiesgoView.jsx
+// ============================================================
+// TAREAS PENDIENTES — RiesgoView.jsx
+// ── P2 🟣 Beymar · HU-08 (Scoring Crediticio) ───────────────
+// TODO (P2 · Beymar · HU-08): Reemplazar gauge CSS por velocímetro real con recharts
+// TODO (P2 · Beymar · HU-08): Sección "Desglose del puntaje": tabla variable, peso% y puntaje parcial
+// TODO (P2 · Beymar · HU-08): Sección "Recomendaciones" según rango (>800/600-800/<600)
+// TODO (P2 · Beymar · HU-08): Card "Historial de scores" con 3 evaluaciones anteriores (mock)
+// ============================================================
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
+
 export default function RiesgoView() {
   return (
     <div>
@@ -37,6 +47,7 @@ export default function RiesgoView() {
           </div>
         </div>
       </div>
+      <DevTaskPanel vista="Riesgo" />
     </div>
   );
 }

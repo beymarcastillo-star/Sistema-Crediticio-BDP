@@ -1,6 +1,15 @@
 // frontend/src/modules/creditos/EvaluacionView.jsx
+// ============================================================
+// TAREAS PENDIENTES — EvaluacionView.jsx
+// ── P3 🟠 Norma · HU-06 (Evaluación Financiera) ─────────────
+// TODO (P3 · Norma · HU-06): Pestaña Proyecciones: instalar recharts, gráfico barras agrupadas 5 años
+// TODO (P3 · Norma · HU-06): Pestaña Flujo de Caja: agregar gráfico de líneas mensual (12 meses mock)
+// TODO (P3 · Norma · HU-06): Selector escenario global: Optimista / Base / Pesimista
+// TODO (P3 · Norma · HU-06): Botones Excel/PDF del modal Resumen Comité con spinner de carga
+// ============================================================
 import { useState } from 'react';
 import Modal from '../../components/Modal.jsx';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 export default function EvaluacionView() {
   const [tab, setTab] = useState('flujo');
@@ -89,6 +98,7 @@ export default function EvaluacionView() {
         </div>
         <div className="info-box"><strong>RF-05:</strong> Este reporte se genera automáticamente. Exportable en PDF o Excel.</div>
       </Modal>
+      <DevTaskPanel vista="Evaluacion" />
     </div>
   );
 }

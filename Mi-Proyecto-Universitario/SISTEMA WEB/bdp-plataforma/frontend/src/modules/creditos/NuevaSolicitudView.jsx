@@ -1,5 +1,26 @@
 // frontend/src/modules/creditos/NuevaSolicitudView.jsx
+// ============================================================
+// TAREAS PENDIENTES — NuevaSolicitudView.jsx
+// ── P1 🔵 Roger · HU-04 (Carga de Documentos) ───────────────
+// TODO (P1 · Roger · HU-04): Dropzone: lista de archivos con nombre, tamaño e ícono por tipo
+// TODO (P1 · Roger · HU-04): Botón "✕ Eliminar" en cada archivo cargado
+// TODO (P1 · Roger · HU-04): Barra de progreso simulada al subir (setTimeout)
+// TODO (P1 · Roger · HU-04): Error visual si archivo supera 25MB o tipo no permitido
+// ── P1 🔵 Roger · HU-07 (Evaluación Productiva) ─────────────
+// TODO (P1 · Roger · HU-07): Campos dinámicos sector Pecuario: especie, cabezas, natalidad, precio/kg
+// TODO (P1 · Roger · HU-07): Campos dinámicos sector Industrial: capacidad, unidades/mes, costo MP
+// TODO (P1 · Roger · HU-07): Campos dinámicos sector Transporte: vehículos, rutas, carga, tarifa/km
+// TODO (P1 · Roger · HU-07): Campos dinámicos sector Comercio: tipo, inventario promedio, rotación
+// TODO (P1 · Roger · HU-07): Campos dinámicos sector Energía: fuente, capacidad MW, precio/kWh
+// ── P2 🟣 Beymar · HU-05 (Validación Documental) ────────────
+// TODO (P2 · Beymar · HU-05): UI Paso 3 — Documentación: checklist con checkbox y progreso "X de 8"
+// TODO (P2 · Beymar · HU-05): UI Paso 4 — Evaluación: resumen solo lectura + textarea observaciones
+// TODO (P2 · Beymar · HU-05): UI Paso 5 — Comité: resumen ejecutivo + botones Aprobar/Observar/Rechazar
+// TODO (P2 · Beymar · HU-05): Botón "Enviar a Evaluación" visible, deshabilitado hasta completar docs
+// TODO (P2 · Beymar · HU-05): Botón "Guardar borrador" en todos los pasos
+// ============================================================
 import { useState } from 'react';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 const sectores = [
   { emoji: '🌾', name: 'Agrícola', desc: 'Soya, papa, quinua' },
@@ -148,6 +169,7 @@ export default function NuevaSolicitudView() {
           </div>
         </div>
       </div>
+      <DevTaskPanel vista="NuevaSolicitud" />
     </div>
   );
 }

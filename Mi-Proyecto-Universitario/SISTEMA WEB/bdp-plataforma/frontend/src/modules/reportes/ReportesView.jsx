@@ -1,6 +1,18 @@
 // frontend/src/modules/reportes/ReportesView.jsx
+// ============================================================
+// TAREAS PENDIENTES — ReportesView.jsx
+// ── P3 🟠 Norma · HU-09 (CORE Bancario) ─────────────────────
+// TODO (P3 · Norma · HU-09): Reemplazar checklist estático por tarjetas de estado dinámico
+// TODO (P3 · Norma · HU-09): Botón "Probar conexión" que simule llamada y muestre latencia
+// TODO (P3 · Norma · HU-09): Sección "Últimas sincronizaciones": tabla timestamp/operación/resultado
+// ── P3 🟠 Norma · HU-12 (Reportes) ──────────────────────────
+// TODO (P3 · Norma · HU-12): Filtros antes de generar: selector solicitud, rango fechas, sector
+// TODO (P3 · Norma · HU-12): Botón "Generar PDF": spinner "Generando..." → "Reporte listo"
+// TODO (P3 · Norma · HU-12): Botón "Exportar Excel": mismo flujo spinner que PDF
+// ============================================================
 import { useState } from 'react';
 import Modal from '../../components/Modal.jsx';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 export default function ReportesView({ onNavigate }) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -91,6 +103,7 @@ export default function ReportesView({ onNavigate }) {
           <div className="alert a-success" style={{ marginBottom: 0 }}><div className="alert-ico">✅</div><div className="alert-text"><strong>Recomendación:</strong> APROBAR.</div></div>
         </div>
       </Modal>
+      <DevTaskPanel vista="Reportes" />
     </div>
   );
 }

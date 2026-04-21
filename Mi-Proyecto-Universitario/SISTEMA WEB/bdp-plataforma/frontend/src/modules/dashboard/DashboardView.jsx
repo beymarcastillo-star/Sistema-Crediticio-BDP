@@ -1,5 +1,13 @@
 // frontend/src/modules/dashboard/DashboardView.jsx
+// ============================================================
+// TAREAS PENDIENTES — DashboardView.jsx
+// ── P2 🟣 Beymar · HU-11 (Monitoreo) ────────────────────────
+// TODO (P2 · Beymar · HU-11): Instalar recharts y agregar gráfico de líneas/barras tendencia semanal (8 semanas)
+// TODO (P2 · Beymar · HU-11): Badge "12" del sidebar debe venir de useState, no texto fijo
+// TODO (P2 · Beymar · HU-11): Botones "Ver"/"Evaluar" de la tabla deben navegar a la vista correcta
+// ============================================================
 import StatCard from '../../components/StatCard.jsx';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 export default function DashboardView({ onNavigate }) {
   return (
@@ -116,6 +124,7 @@ export default function DashboardView({ onNavigate }) {
           </div>
         </div>
       </div>
+      <DevTaskPanel vista="Dashboard" />
     </div>
   );
 }

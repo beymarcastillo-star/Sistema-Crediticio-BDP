@@ -2,6 +2,22 @@
 import { useState, useEffect } from 'react';
 import { api } from './services/api.js';
 
+// ============================================================
+// TAREAS PENDIENTES — App.jsx (Login + Layout general)
+// ── P1 🔵 Roger · HU-01 (Autenticación) ─────────────────────
+// TODO (P1 · Roger · HU-01): Agregar link "¿Olvidaste tu contraseña?" bajo el botón login
+// TODO (P1 · Roger · HU-01): Reemplazar mensaje texto plano por toast con color (rojo/verde/amarillo)
+// TODO (P1 · Roger · HU-01): Mostrar estado bloqueado tras 3 intentos fallidos con cuenta regresiva
+// ── P1 🔵 Roger · HU-10 (Operación Offline) ─────────────────
+// TODO (P1 · Roger · HU-10): Chip online/offline en topbar usando navigator.onLine
+// TODO (P1 · Roger · HU-10): Banner amarillo "Modo sin conexión" cuando se pierda la red
+// TODO (P1 · Roger · HU-10): Banner verde temporal "Conexión restaurada" al volver online
+// ── P2 🟣 Beymar · HU-11 (Monitoreo) ────────────────────────
+// TODO (P2 · Beymar · HU-11): Panel de notificaciones al clic en 🔔 (drawer con lista mock)
+// TODO (P2 · Beymar · HU-11): Badge con contador en ícono 🔔
+// TODO (P2 · Beymar · HU-11): Aviso sesión por vencer: banner "Tu sesión expira en 5 min"
+// ============================================================
+import DevTaskPanel       from './components/DevTaskPanel.jsx';
 import DashboardView      from './modules/dashboard/DashboardView.jsx';
 import SolicitudesView    from './modules/creditos/SolicitudesView.jsx';
 import NuevaSolicitudView from './modules/creditos/NuevaSolicitudView.jsx';
@@ -399,6 +415,7 @@ export default function App() {
           {views[view] || views.dashboard}
         </div>
       </div>
+      <DevTaskPanel vista="App" />
     </div>
   );
 }

@@ -1,6 +1,24 @@
 // frontend/src/modules/admin/AdminView.jsx
+// ============================================================
+// TAREAS PENDIENTES — AdminView.jsx
+// ── P2 🟣 Beymar · HU-02 (Roles y Permisos) ─────────────────
+// TODO (P2 · Beymar · HU-02): Toggles de matriz de permisos deben cambiar estado al hacer clic
+// TODO (P2 · Beymar · HU-02): Botón "+ Nuevo Usuario" con modal: nombre, email, rol
+// TODO (P2 · Beymar · HU-02): Botones Editar/Desactivar en cada tarjeta de usuario
+// TODO (P2 · Beymar · HU-02): Modal de confirmación al cambiar un permiso
+// ── P3 🟠 Norma · HU-03 (Auditoría) ─────────────────────────
+// TODO (P3 · Norma · HU-03): Input "Filtrar por usuario" debe filtrar la lista de logs visualmente
+// TODO (P3 · Norma · HU-03): Selector de operación: Todos / INSERT / UPDATE / DELETE / SELECT
+// TODO (P3 · Norma · HU-03): Paginación de logs: Anterior/Siguiente + "Página X de Y"
+// TODO (P3 · Norma · HU-03): Modal de detalle al clic en fila: hash completo, datos antes/después
+// TODO (P3 · Norma · HU-03): Botón "Verificar integridad" con resultado visual ✅/❌
+// ── P3 🟠 Norma · HU-12 (Reportes / Motor de Reglas) ────────
+// TODO (P3 · Norma · HU-12): Botón "Guardar cambios" con spinner → "Guardado ✓" tras 2s
+// TODO (P3 · Norma · HU-12): Botón "Restaurar por defecto" con modal de confirmación
+// ============================================================
 import { useState, useEffect } from 'react';
 import { api } from '../../services/api.js';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 export default function AdminView() {
   const [tab, setTab] = useState('permisos');
@@ -164,6 +182,7 @@ export default function AdminView() {
           </div>
         </div>
       )}
+      <DevTaskPanel vista="Admin" />
     </div>
   );
 }

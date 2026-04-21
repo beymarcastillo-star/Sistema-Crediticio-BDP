@@ -1,6 +1,13 @@
 // frontend/src/modules/creditos/GarantiasView.jsx
+// ============================================================
+// TAREAS PENDIENTES — GarantiasView.jsx
+// ── P2 🟣 Beymar · HU-08 (Scoring Crediticio / Garantías) ───
+// TODO (P2 · Beymar · HU-08): Botones Editar/Eliminar en cada fila de garantías
+// TODO (P2 · Beymar · HU-08): Validaciones visuales (mensajes error) en modal "Nueva Garantía"
+// ============================================================
 import { useState } from 'react';
 import Modal from '../../components/Modal.jsx';
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
 
 export default function GarantiasView() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -67,6 +74,7 @@ export default function GarantiasView() {
           <div className="form-group"><label className="lbl">Fecha Avalúo</label><input className="inp" type="date" /></div>
         </div>
       </Modal>
+      <DevTaskPanel vista="Garantias" />
     </div>
   );
 }

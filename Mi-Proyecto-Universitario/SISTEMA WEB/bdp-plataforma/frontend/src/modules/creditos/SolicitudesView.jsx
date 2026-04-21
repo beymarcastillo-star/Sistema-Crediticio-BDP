@@ -1,4 +1,14 @@
 // frontend/src/modules/creditos/SolicitudesView.jsx
+// ============================================================
+// TAREAS PENDIENTES — SolicitudesView.jsx
+// ── P1 🔵 Roger · HU-04 (Carga de Documentos / Solicitudes) ─
+// TODO (P1 · Roger · HU-04): Filtro de búsqueda por texto que filtre la tabla visualmente
+// TODO (P1 · Roger · HU-04): Dropdowns Estado y Sector que filtren las filas de la tabla
+// TODO (P1 · Roger · HU-04): Paginación: botones Anterior/Siguiente + "Página X de Y"
+// TODO (P1 · Roger · HU-04): Botones de fila (Evaluar/Detalle/Revisar/Ver) deben navegar a la vista correcta
+// ============================================================
+import DevTaskPanel from '../../components/DevTaskPanel.jsx';
+
 export default function SolicitudesView({ onNavigate }) {
   return (
     <div>
@@ -104,6 +114,7 @@ export default function SolicitudesView({ onNavigate }) {
           </div>
         </div>
       </div>
+      <DevTaskPanel vista="Solicitudes" />
     </div>
   );
 }
