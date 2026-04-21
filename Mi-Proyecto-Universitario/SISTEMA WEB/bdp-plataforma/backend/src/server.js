@@ -11,6 +11,7 @@ const errorHandler = require('./core/middleware/error.handler');
 
 const authRoutes      = require('./api/v1/auth/auth.routes');
 const auditoriaRoutes = require('./api/v1/auditoria/auditoria.routes');
+const adminRoutes     = require('./api/v1/admin/admin.routes');
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok', env: config.env }));
 // Rutas
 app.use('/api/v1/auth',      authRoutes);
 app.use('/api/v1/auditoria', auditoriaRoutes);
+app.use('/api/v1/admin',     adminRoutes);
 
 // 404
 app.use((req, res) => res.status(404).json({ error: `${req.method} ${req.path} no encontrado` }));

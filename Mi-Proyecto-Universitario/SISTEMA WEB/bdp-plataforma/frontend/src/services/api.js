@@ -33,7 +33,8 @@ const request = async (method, path, body = null) => {
 export const api = {
   // AUTH
   login:    (email, password)               => request('POST', '/auth/login',    { email, password }),
-  registro: (nombre, email, password, rol)  => request('POST', '/auth/registro', { nombre, email, password, rol }),
+  registro: (_nombre, email, password, _rol, carnet, codigo) =>
+    request('POST', '/auth/registro', { email, password, carnet, codigo }),
   logout:   ()                              => request('POST', '/auth/logout'),
 
   // AUDITORÍA
@@ -41,5 +42,13 @@ export const api = {
     const qs = new URLSearchParams(params).toString();
     return request('GET', `/auditoria${qs ? '?' + qs : ''}`);
   },
+  getResumen:          () => request('GET', '/auditoria/resumen'),
   verificarIntegridad: () => request('GET', '/auditoria/verificar'),
+
+  // ADMIN — solo rol administrador
+  admin: {
+    crearInvitacion:   (data)    => request('POST', '/admin/invitaciones', data),
+    listarInvitaciones: ()       => request('GET',  '/admin/invitaciones'),
+    listarUsuarios:    ()        => request('GET',  '/admin/usuarios'),
+  },
 };
